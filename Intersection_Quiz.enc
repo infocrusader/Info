@@ -1,0 +1,23 @@
+import edu.princeton.cs.algs4.In;
+
+public class Intersection_Quiz {
+    Integer[] a, b;
+    public void readAB(){
+        In inA = new In("Aout.txt");
+        In inB = new In("Bout.txt");
+        
+        // read int[] arrays from "Aout.txt" and "Bout.txt"
+        // convert them to Integer[] arrays
+        // store them in Integer[] a, b;
+    }
+    
+    public int intersection_count(){
+        // write an efficient algorithm to find
+        // the nimber of common elements in two arrays
+        return 0;
+    }
+    
+    public static void main(String[] args) {
+        // print out the size of the a intersect b
+    } 
+}
