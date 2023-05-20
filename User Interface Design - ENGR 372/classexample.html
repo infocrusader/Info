@@ -1,0 +1,47 @@
+<html> 
+<head> 
+<script> 
+function calculate(){ 
+user_selection=document.converter_form.cf.value; 
+convertion_value=document.converter_form.iv.value; 
+if(user_selection=='c') { 
+result=convertion_value*1.8+32; 
+} 
+else if(user_selection=='f') { 
+result=(convertion_value-32)/1.8; 
+} 
+document.converter_form.ov.value=Math.round(result,2);
+} 
+</script> 
+<style> 
+body{ color: #FFF; }
+</style> 
+</head>
+ <body bgcolor="000">
+ <form name="converter_form"> 
+<table border="3" width="1000/0" height="100%"> 
+<tr><td align="center"> 
+<table border="0" width="200" cellpadding="5" cellspacing="5"> 
+<tr><td colspan="2" align="center"><img src="bg.png" width="180"> </td> </tr> 
+<tr><td>SELECTION </td><td> 
+<select name="cf"> 
+<option value="c">CELCIUS-->FAHRENHEIT 
+<option value="f">FAHRENHEIT-->CELCIUS
+ </select>
+ </td> </tr> 
+<tr><td>VALUE</td><td> 
+<input type="text" name="iv" size="27">
+ </td> </tr> 
+<tr><td>RESULT</td><td><input type="text" name="ov" size="27"> </td> </tr> 
+<tr><td> 
+<input type="reset"> 
+</td><td colspan="1" align="center"><input type="button" value=" CONVERT " onclick="calculate()"></td></tr> 
+</td> </tr> 
+
+</table>
+</form>
+</td>
+</tr>
+
+</body>
+</html>

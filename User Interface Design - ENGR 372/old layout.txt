@@ -1,0 +1,57 @@
+return ( 
+    <Layout style={{ height: "100vh", overflow: "auto" }}>
+      <Router>
+        <Header style={styles.header}>
+          <SearchCollections setInputValue={setInputValue}/>
+          <Menu
+            theme="light"
+            mode="horizontal"
+            style={{
+              display: "flex",
+              fontSize: "17px",
+              fontWeight: "500",
+              width: "100%",
+              justifyContent: "center",
+            }}
+            defaultSelectedKeys={["nft"]}
+          >
+           <Menu.Item key="nftMarket">
+              <NavLink to="/nftMarket">Explore</NavLink>
+            </Menu.Item>
+            <Menu.Item key="nft">
+              <NavLink to="/nftBalance">Your Collection</NavLink>
+            </Menu.Item>
+            <Menu.Item key="transactions">
+              <NavLink to="/transactions"> Transactions</NavLink>
+            </Menu.Item>
+            <Menu.Item key="Mint An Nft">
+              <NavLink to="/MintNFT"> Mint Nft</NavLink>
+            </Menu.Item>
+          </Menu>
+          <div style={styles.headerRight}>
+            <Chains />
+            <NativeBalance />
+            <Account />
+          </div>
+        </Header>
+        <div style={styles.content}>
+          <Switch>
+            <Route path="/nftBalance">
+              <NFTBalance />
+            </Route>
+            <Route path="/nftMarket">
+              <NFTTokenIds inputValue={inputValue} setInputValue={setInputValue}/>
+            </Route>
+            <Route path="/transactions">
+              <NFTMarketTranasctions />
+            </Route>
+            <Route path="/MintNFT">
+              <MintNFT />
+            </Route>
+          </Switch>
+          <Redirect to="/nftBalance" />
+        </div>
+      </Router>
+      
+    </Layout>
+  );
