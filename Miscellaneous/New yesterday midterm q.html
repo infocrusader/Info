@@ -1,0 +1,135 @@
+<!DOCTYPE html><html>
+    <div class="main">
+        <h2>Question: </h2>
+        <p><img alt="For the multiplexer based bus system below we want to implement the register transfers given in the table below with the cont" src="https://media.cheggcdn.com/media/6d5/6d596862-2996-48f1-bc6e-d66e913c642d/phpwgYrpm" style="height:277px;"><img alt="Load
+LO L1 L2
+RO
+Select
+SO S1
+3-to-1
+MUX
+Bus
+R1
+n
+R2
+" src="https://media.cheggcdn.com/media/e96/e96f2827-f572-42ee-90cd-56463714572e/phpkEcMOq" style="height:464px;width:309px;"></p>
+<p>For the multiplexer based bus system below we want to implement
+the register transfers given in the table below with the control
+lines K0,K1,K2. Design and redraw the circuit below by adding the
+necessary combinational logic which takes the control signals
+K0,K1,K2&nbsp;as input, and outputs the&nbsp;load&nbsp;enable lines
+L0,L1,L2 and mux select lines S0,S1 according to register transfer
+table below.&nbsp;Show the truth tables for your design.</p>
+<p>Note: MUX on circuit below selects the top most input for
+S<sub>0</sub>S<sub>1</sub>=00, selects the middle input for 01 and
+selects the bottom most input for 10. Make use of don't care states
+to optimize your circuit where possible.</p>
+
+        <h2>Answer: </h2><button class="accordion active"><b>Solution</b></button><div class="panel colapse expand"> <p>The solution and circuit is as in below images.</p> <p>&nbsp;</p> <p><img alt="The solution for the addition crout with
+Ko, kilka as inprb and
+Sos, Lo, Ltg as outhely
+ ko Ki K2 opalon So si
+Lo L LL
+나
+Yo" src="https://media.cheggcdn.com/coop/bc8/bc83ea0d-0dfb-4edd-9b85-99bdd2cf3d3e/1605885783824_A1V3ER2M0AeE2P90BFDgY8MC.jpg" style="height:2520px;width:2016px"></p> <p>&nbsp;</p> <p><img alt="So
+Si
+LO
+LI
+B)
+B)
+Ro
+os
+Is
+RI
+3 to 1
+MUX
+n ท
+n
+R
+t
+" src="https://media.cheggcdn.com/coop/986/986d6d6b-6ead-4f12-b20b-e5003e5a794f/1605885984779_6fAFeQK8b8dCT1E0f8DP6FfJ.jpg" style="height:1536px;width:1112px"></p> </p></div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            //panel.style.height = "0";
+            //this.nextElementSibling.innerHTML =JSON.stringify(this.nextElementSibling.className);
+            this.nextElementSibling.classList.toggle('collapse')
+            this.nextElementSibling.classList.toggle('expand')
+            //alert(this.nextElementSibling)
+
+        });
+    }
+</script></body><head><meta name="viewport" content="width=device-width, initial-scale=1"><style>
+
+    .accordion {
+        background-color: #ED8C00;
+        color: #00000;
+        cursor: pointer;
+        padding: 15px;
+        width: 100%;
+        border: solid black 1px;
+        text-align: left;
+        font-size: 15px;
+        height:auto;
+        overflow:hidden;
+        filter: brightness(100%);
+        transition:filter 0.15s;
+
+    }
+
+    .accordion:hover {
+        filter: brightness(125%);
+        border: solid black;
+    }
+
+    .panel {
+        background-color: white;
+        height:auto;
+        opacity: 1;
+        padding: 0 18px;
+        max-height:500em;
+        border-style: groove;
+        transition: max-height 0.5s ease;
+        overflow:hidden;
+    }
+
+    .panel.colapse {
+        max-height:0em;
+        border-style: none;
+    }
+
+    .panel.expand{
+        max-height:500em;
+        border-style: groove;
+    }
+
+    .answer {
+        height:auto;
+        max-height:500em;
+        transition: max-height 0.5s ease;
+    }
+
+    .answer.colapse {
+        max-height:0em;
+
+    }
+
+    .answer.expand{
+        max-height:500em;
+
+    }
+
+    .question {
+        padding: 0 18px;
+        border: groove;
+        overflow:hidden;
+    }
+    .main {
+        background-color: white;
+    }
+
+
+</style></head>
